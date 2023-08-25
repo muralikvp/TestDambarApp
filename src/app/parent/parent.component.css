@@ -1,0 +1,14 @@
+.h1BlueColor{
+  font-size:60px;
+  text-align:center;
+  color:blue
+}
+.h1CenterText{
+  font-size: 45px;
+  text-align: center;
+}
+.h1RedColor{
+  font-size: 40px;
+  text-align: center;
+  color: red;
+}
