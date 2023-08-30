@@ -1,0 +1,9 @@
+.specialSucess{
+  color: green;
+  font-size: large;
+}
+
+.specialFailed{
+  color: red;
+  font-size: large;
+}

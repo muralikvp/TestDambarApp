@@ -11,12 +11,15 @@ import { ActivatedRoute } from '@angular/router';
 export class AddComponent {
   messageclass: string = '';
   message: string = '';
-  customerid: any;
+  customerid: number =0;
   editdata: any;
   responsedata: any;
+  Name :string ="";
+  Email :string ="";
+
 
   constructor(private service: CustomerService, private route: ActivatedRoute) {
-    this.customerid = this.route.snapshot.paramMap.get('id');
+    this.customerid = Number(this.route.snapshot.paramMap.get('id'));
     if (this.customerid) {
        this.updateCustomer(this.customerid);
     }
