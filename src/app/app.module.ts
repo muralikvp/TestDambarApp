@@ -15,6 +15,8 @@ import { CustomerComponent } from './customer/customer.component';
 import { TodoComponent } from './todo/todo.component';
 import { PathNotFoundComponent } from './path-not-found/path-not-found.component';
 import { SeniorJuniorPipe } from './shared/senior-junior.pipe';
+import { HeaderComponent } from './header/header.component';
+import { WebWorkerComponent } from './web-worker/web-worker.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { SeniorJuniorPipe } from './shared/senior-junior.pipe';
     CustomerComponent,
     TodoComponent,
     PathNotFoundComponent,
-    SeniorJuniorPipe
+    SeniorJuniorPipe,
+    HeaderComponent,
+    WebWorkerComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,ReactiveFormsModule,AppRoutingModule

@@ -43,6 +43,8 @@ export class AddComponent {
         if (this.responsedata.id > 1) {
           this.message = 'Customer Saved Successfully';
           this.messageclass = 'sucess';
+          this.service.NewUserMessage = this.responsedata.email + " added sucessfully.";
+
           this.clearCustomer();
         } else {
           this.message = 'Failed to Save';

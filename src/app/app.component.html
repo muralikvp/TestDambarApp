@@ -1,19 +1,14 @@
-<div class="header" *ngIf="displaymenu">
+<app-header>
   <img width="100" alt="Logo"
   src="https://www.hopetutors.com/wp-content/uploads/2019/01/Hope-Tutors-final-logo.png"
   />
-
-  <a routerLink="" class="menulink">Home</a>
-  <a routerLink="customer" class="menulink">Customer</a>
-  <a routerLink="customer/Todo" class="menulink">Todo</a>
-  <a (click)="logOut()" class="menulink">logout</a>
-
-</div>
+<p BrandName>Hope Tutors</p>
+</app-header>
 <br>
 <div class="container-fluid">
   <div class="card-box">
     <router-outlet></router-outlet>
   </div>
 </div>
-<div class="header" *ngIf="displaymenu">HopeTutors</div>
+<div class="header">HopeTutors</div>
 

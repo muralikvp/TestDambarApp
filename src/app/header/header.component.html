@@ -1,0 +1,12 @@
+<div class="header" *ngIf="displaymenu">
+  <ng-content></ng-content>
+
+  <a routerLink="" class="menulink">Home</a>
+  <a routerLink="customer" class="menulink">Customer</a>
+  <a routerLink="customer/Todo" class="menulink">Todo</a>
+  <a (click)="logOut()" class="menulink">logout</a>
+</div>
+<h2>
+  <ng-content select="[BrandName]"></ng-content>
+</h2>
+

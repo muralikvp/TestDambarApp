@@ -6,7 +6,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class CustomerService {
+
   apiurl = 'https://dummyjson.com/users';
+  NewUserMessage :string ='';
 
   constructor(private http: HttpClient) {}
   //Observables provide support for data sharing between publishers and subscribers
