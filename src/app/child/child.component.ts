@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { outputAst } from '@angular/compiler';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,4 +8,16 @@ import { Component, Input } from '@angular/core';
 })
 export class ChildComponent {
   @Input() ChildReceiver!:string;
+
+  @Input() BrandName!:string;
+
+  @Input() Training!:string;
+
+  @Output() newItemEvent= new EventEmitter<string>();
+
+  addNewItem(value:string){
+
+    this.newItemEvent.emit(value);
+
+  }
 }

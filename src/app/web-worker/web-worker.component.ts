@@ -11,11 +11,15 @@ export class WebWorkerComponent {
 
   loadHeavyComp() {
     if (typeof Worker !== 'undefined') {
+
       const worker = new Worker(new URL('web-worker.worker', import.meta.url));
-      worker.postMessage(10000);
+
+      worker.postMessage(10);
+
       worker.onmessage = ({data}) =>{
         this.result = data.prime;
       }
+
     }
   }
 }

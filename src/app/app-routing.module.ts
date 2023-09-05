@@ -10,6 +10,7 @@ import { CustomerComponent } from "./customer/customer.component";
 import { TodoComponent } from "./todo/todo.component";
 import { PathNotFoundComponent } from "./path-not-found/path-not-found.component";
 import { RoleGuard } from "./role.guard";
+import { WebWorkerComponent } from "./web-worker/web-worker.component";
 
 
 const routes:Routes =[
@@ -22,6 +23,7 @@ const routes:Routes =[
       {path:'',component:ListingComponent},  //localhost:4200/customer/
       {path:'create',component:AddComponent}, //localhost:4200/customer/create
       {path:'Edit/:id',component:AddComponent}, //localhost:4200/customer/Edit/3
+      {path:'WebWorker',component:WebWorkerComponent},
       {path:'Todo',component:TodoComponent}
   ],
   canActivate:[AuthGuard,RoleGuard]

@@ -19,11 +19,17 @@ function generatePrime(num:any){
       };
       i = i === 2 ? i+1 : i+2;
   };
+
+
   return arr;
 };
 
 addEventListener('message', ({ data }) => {
-  let result = generatePrime(data);
-  const response = {prime: result};
-  postMessage(response);
+  setTimeout( () => {
+    let result = generatePrime(data);
+    const response = {prime: result};
+    postMessage(response);
+
+}, 9000 );
+
 });
